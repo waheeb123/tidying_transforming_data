@@ -88,6 +88,12 @@ airlines_long <- con %>%
 
 
 ```{r}
+knitr::kable(airlines_long)
+```
+
+
+
+```{r}
 
 # Then, use dplyr to calculate the total number of arrivals for each airline and destination
 library(dplyr)
@@ -96,6 +102,11 @@ arrivals_summary <- airlines_long %>%
   summarise(total_arrivals = sum(arrivals))
 
 ```
+
+```{r}
+knitr::kable(arrivals_summary)
+```
+
 
 ```{r}
 
